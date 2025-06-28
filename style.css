@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+body {
+    background-color: #DADADA;
+    font-family: "Bitter", Arial;
+    height: 100%;
+    font-size: 16px;
+}
+
+header {
+    margin: 10px auto 5px auto;
+    padding-bottom: 5px;
+    width: 100%;
+    border-bottom: 0.01rem solid ; 
+}
+
+ul li{
+    text-transform: uppercase;
+    display: inline;
+    padding: 5px;
+    margin: 0px 20px;
+}
+
+h1 {
+    font-family: "Manufacturing Consent", system-ui;
+    font-weight: 400;
+    margin: auto;
+    font-size: clamp(1em, 2vw + 5em, 15em);
+}
+
+#leonardoPic {
+    width: 100%;
+    max-width: 1300px;
+    display: block;
+    margin: 10px auto;
+}
+
+#brief {
+    width: 100%;
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 20px 0;
+    background-color: #1c1c1c;
+    color: rgb(247, 247, 247);
+    text-transform: uppercase;
+}
+
+#brief p {
+    padding: 2px 40px;
+    text-align: end;
+}
+
+#about {
+    
+}
+
+#education {
+    
+}
+
+#projects {
+    
+}
+
+#contacts {
+    
+}
+
+footer {
+    
+}
