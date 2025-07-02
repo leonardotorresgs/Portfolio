@@ -9,24 +9,31 @@ body {
     color: #DADADA;
     background: linear-gradient(90deg, #1c1c1cee 20%, #1c1c1c 100%);
     font-family: "Bitter", Arial;
+    letter-spacing: 1px;
     height: 100%;
     font-size: 16px;
 }
 
 header {
-    margin: 10px auto 5px auto;
+    margin: 20px auto 0px auto;
     padding-bottom: 5px;
     width: 100%;
 }
 
-.navBtn{
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.nav-button{
     text-transform: uppercase;
     display: inline-block;
     padding: 5px;
     margin: 0px 20px;
 }
 
-.navBtn:hover {
+.nav-button:hover {
     transform: scale(1.1);
     transition: 0.3s ease;
 }
@@ -40,29 +47,78 @@ li a {
     color: #DADADA;
 }
 
+#home {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     font-family: "Manufacturing Consent", system-ui;
     font-weight: 400;
-    margin: auto;
     font-size: clamp(1em, 2vw + 5em, 15em);
+    margin: 0.2em auto;
 }
 
-#brief {
+#img-container {
+    position: relative;
+}
+
+#img-container img {
     width: 100%;
-    max-width: 1300px;
-    margin: 20px auto;
+    max-width: 60em;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#img-container p {
+    text-align: left;
+    font-weight: 400;
     padding: 20px 0;
+    color: #DADADA;
+    text-shadow: 2px 1px 5px #1c1c1c;
+    text-transform: uppercase;
+    font-size: clamp(0.8em, 1.5vw, 1.2em);
+    top:20%;
+    left: 22%;
+    position: absolute;
+    z-index: 2;
+}
+
+#img-container button {
+    background-color: #dadada45;
+    position: absolute;
+    top: 70%;
+    left: 22%;
+    text-transform: uppercase;
+    color: #d4d4d4;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#img-container button:hover {
     background-color: #DADADA;
     color: #1c1c1c;
-    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
 }
 
-#brief p {
-    padding: 2px 40px;
-    text-align: end;
+#icons-container {
+    width: 7em;
+    margin: auto auto 20px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#icons-container img {
+    width: 25px;
 }
 
 #about {
+    background-color: #DADADA;
+    padding: 20px;
+    color: #1c1c1c;
     height: 500px;
 }
 
