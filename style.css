@@ -6,7 +6,8 @@
 }
 
 body {
-    background: linear-gradient(90deg, rgb(216, 216, 216) 0%, #FFF 50%, black 100%);
+    color: #DADADA;
+    background: linear-gradient(90deg, #1c1c1cee 20%, #1c1c1c 100%);
     font-family: "Bitter", Arial;
     height: 100%;
     font-size: 16px;
@@ -16,14 +17,27 @@ header {
     margin: 10px auto 5px auto;
     padding-bottom: 5px;
     width: 100%;
-    border-bottom: 0.01rem solid ; 
 }
 
-ul li{
+.navBtn{
     text-transform: uppercase;
-    display: inline;
+    display: inline-block;
     padding: 5px;
     margin: 0px 20px;
+}
+
+.navBtn:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.arrow {
+    max-width: 14px;
+    margin-right: 2px;
+}
+
+li a {
+    color: #DADADA;
 }
 
 h1 {
@@ -33,20 +47,13 @@ h1 {
     font-size: clamp(1em, 2vw + 5em, 15em);
 }
 
-#leonardoPic {
-    width: 100%;
-    max-width: 1300px;
-    display: block;
-    margin: 10px auto;
-}
-
 #brief {
     width: 100%;
     max-width: 1300px;
     margin: 20px auto;
     padding: 20px 0;
-    background-color: #1c1c1c;
-    color: rgb(247, 247, 247);
+    background-color: #DADADA;
+    color: #1c1c1c;
     text-transform: uppercase;
 }
 
