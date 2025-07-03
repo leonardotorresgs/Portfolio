@@ -15,9 +15,14 @@ body {
 }
 
 header {
-    margin: 20px auto 0px auto;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    text-shadow: 2px 1px 5px #1c1c1c;
+    position: fixed;
+    margin: 0px auto 0px auto;
     padding-bottom: 5px;
     width: 100%;
+    z-index: 2;
 }
 
 nav ul {
@@ -46,6 +51,9 @@ nav ul {
 li a {
     color: #DADADA;
 }
+
+
+/* HOME */
 
 #home {
     height: 95vh;
@@ -115,16 +123,31 @@ h1 {
     width: 25px;
 }
 
+
+/* ABOUT */
+
 #about {
     background-color: #DADADA;
-    padding: 20px;
+    padding-top: 40px;
     color: #1c1c1c;
     height: 500px;
 }
 
+#about p {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+
+/* EDUCATION */
+
 #education {
     background-color: #1c1c1c;
     color: rgb(247, 247, 247);
+    padding-top: 20px;
     height: 500px;
 }
 
@@ -133,13 +156,21 @@ h1 {
     font-weight: 400;
 }
 
+
+/* PROJECTS */
+
 #projects {
     height: 500px;
+    padding-top: 30px;
 }
+
+
+/* CONTACT */
 
 #contacts {
     color: rgb(247, 247, 247);
     background-color: #1c1c1c;
+    padding-top: 30px;
     text-align: center;
     height: 300px;
 }
@@ -150,9 +181,13 @@ h1 {
     padding: 5px;
 }
 
+
+/* FOOTER */
+
 footer {
     background-color: black;
     color: rgb(247, 247, 247);
-    padding: 10px;
+    height: 300px;
+    padding-top: 30px;
     font-size: 12px;
 }
