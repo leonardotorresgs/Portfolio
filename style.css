@@ -5,6 +5,9 @@
     text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     color: #DADADA;
     background: linear-gradient(90deg, #1c1c1cee 20%, #1c1c1c 100%);
@@ -66,6 +69,7 @@ h1 {
     font-weight: 400;
     font-size: clamp(1em, 2vw + 5em, 15em);
     margin: 0.2em auto;
+    letter-spacing: 25px;
 }
 
 #img-container {
@@ -130,7 +134,7 @@ h1 {
     background-color: #DADADA;
     padding-top: 40px;
     color: #1c1c1c;
-    height: 500px;
+    height: 80vh;
 }
 
 #about p {
@@ -148,7 +152,7 @@ h1 {
     background-color: #1c1c1c;
     color: rgb(247, 247, 247);
     padding-top: 20px;
-    height: 500px;
+    height: 80vh;
 }
 
 #fontCloister {
@@ -160,7 +164,7 @@ h1 {
 /* PROJECTS */
 
 #projects {
-    height: 500px;
+    height: 80vh;
     padding-top: 30px;
 }
 
@@ -168,14 +172,26 @@ h1 {
 /* CONTACT */
 
 #contacts {
-    color: rgb(247, 247, 247);
     background-color: #1c1c1c;
     padding-top: 30px;
     text-align: center;
-    height: 300px;
+    height: 80vh;
+    display: flex;
 }
 
-.contact {
+#form-contact {
+    color: #1c1c1c;
+    background: #DADADA;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px black;
+    height: 55vh;
+    width: 100%;
+    max-width: 45vw;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.item-contact {
     display: block;
     margin: 10px auto;
     padding: 5px;
@@ -187,7 +203,15 @@ h1 {
 footer {
     background-color: black;
     color: rgb(247, 247, 247);
-    height: 300px;
-    padding-top: 30px;
+    height: 5vh;
+    padding-top: 10px;
     font-size: 12px;
+    display: flex;
+}
+
+footer p {
+    margin: auto;
+    width: 70vw;
+    padding: 10px 0px;
+    border-top: 0.2px solid rgb(33, 33, 33);
 }
